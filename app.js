@@ -11,7 +11,7 @@ let image=document.querySelector('img');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 1000;
-let timeAutoNext = 5000;
+let timeAutoNext = 2000;
 
 image.onclick=function(){
     showSlider('next');

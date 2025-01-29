@@ -7,16 +7,14 @@ let SliderDom = carouselDom.querySelector('.carousel .list');
 let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
 let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
 let timeDom = document.querySelector('.carousel .time');
-let image=document.querySelector('img');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-let timeRunning = 1000;
-let timeAutoNext = 2000;
+let timeRunning = 3000;
+let timeAutoNext = 7000;
 
-image.onclick=function(){
-    showSlider('next');
+nextDom.onclick = function(){
+    showSlider('next');    
 }
-
 
 prevDom.onclick = function(){
     showSlider('prev');    
